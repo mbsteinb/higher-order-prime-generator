@@ -24,6 +24,8 @@ int main(int argc, char* argv[])
   char digits[4] = {'2', '3', '5', '7'};
   int dSize = 4;
 
+  out << "Order 1:\t23" << endl;
+
   string num = "23";
   int lastOrder = 23;
   int order = 1;
@@ -58,7 +60,7 @@ int main(int argc, char* argv[])
 
     if(prime)
     {
-      out << "Order " << order++ << ":\t" << num << endl;
+      out << "Order " << ++order << ":\t" << num << endl;
       lastOrder = v;
       cout << endl << order << '\t' << v << endl;
 
